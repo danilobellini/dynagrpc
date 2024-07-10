@@ -21,10 +21,8 @@ import grpc
 
 from . import _astcast
 
-try:
-    from typing import Literal
-except ImportError:  # TODO: Drop Python 3.7 compatibility
-    from typing_extensions import Literal
+
+from typing import Literal
 
 __version__ = "0.2.0.dev"
 
